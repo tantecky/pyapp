@@ -38,3 +38,9 @@ jobs:
       - name: Run Tox
         run: |
           tox
+      # Share ./reports
+      - name: Share reports with other jobs
+        uses: actions/upload-artifact@main
+        with:
+          name: reports_dir
+          path: ./reports
