@@ -4,6 +4,8 @@ An example app in Python
 
 ## How to prepare dev environment on Windows
 
+Install Python 3.8 from [Anaconda](https://www.anaconda.com/products/individual), or download it [directly](https://www.python.org/ftp/python/3.8.10/python-3.8.10-amd64.exe).
+
 ```bat
 python.exe -m venv venv
 call venv/Scripts/activate.bat
