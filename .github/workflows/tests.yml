@@ -1,11 +1,10 @@
-name: Tests
+name: tests
 
-# Controls when the workflow will run
 on:
   push:
-    branches: [ $default-branch ]
+    branches: [$default-branch]
   pull_request:
-    branches: [ $default-branch ]
+    branches: [$default-branch]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -18,11 +17,11 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - {name: Linux, python: '3.8', os: ubuntu-latest}
-          - {name: Windows, python: '3.8', os: windows-latest}
-          - {name: Linux, python: '3.9', os: ubuntu-latest}
-          - {name: Windows, python: '3.9', os: windows-latest}
-          
+          - { name: Linux, python: '3.8', os: ubuntu-latest }
+          - { name: Windows, python: '3.8', os: windows-latest }
+          - { name: Linux, python: '3.9', os: ubuntu-latest }
+          - { name: Windows, python: '3.9', os: windows-latest }
+
     steps:
       - uses: actions/checkout@v2
       - name: Set up Python ${{ matrix.python }}
@@ -32,4 +31,8 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-
+          python -m pip install -r requirements.txt
+          python -m pip install -r requirements-dev.txt
+      - name: Run Tox
+        run: |
+          tox

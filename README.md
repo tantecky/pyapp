@@ -1,4 +1,4 @@
-# pyapp
+# pyapp # pyapp ![tests](https://github.com/tantecky/pyapp/actions/workflows/tests.yml/badge.svg)
 
 An example app in Python
 
