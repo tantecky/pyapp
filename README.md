@@ -1,10 +1,8 @@
-# pyapp ![tests](https://github.com/tantecky/pyapp/actions/workflows/tests.yml/badge.svg) [![Tests Status](https://tantecky.github.io/pyapp/reports/badge-tests.svg?dummy=8484744?dummy=8484744)](https://tantecky.github.io/pyapp/reports/junit/report.html) [![Coverage Status](https://tantecky.github.io/pyapp/reports/badge-coverage.svg?dummy=8484744)](https://tantecky.github.io/pyapp/reports/coverage/index.html)
-
-An example app in Python
+# pyapp ![tests](https://github.com/tantecky/pyapp/actions/workflows/tests.yml/badge.svg)
 
 ## How to prepare dev environment on Windows
 
-Install Python 3.8 from [Anaconda](https://www.anaconda.com/products/individual), or download it [directly](https://www.python.org/ftp/python/3.8.10/python-3.8.10-amd64.exe).
+Install Python 3.8+ from [Anaconda](https://www.anaconda.com/products/individual), or download it [directly](https://www.python.org/ftp/python/3.8.10/python-3.8.10-amd64.exe).
 
 ```bat
 python.exe -m venv venv

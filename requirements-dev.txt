@@ -6,4 +6,3 @@ mypy
 tox
 flake8
 coverage
-genbadge[all]
