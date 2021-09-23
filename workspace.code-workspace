@@ -1,0 +1,12 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "python.pythonPath": "venv\\Scripts\\python.exe",
+    "files.eol": "\n",
+    "python.formatting.provider": "black"
+  }
+}
