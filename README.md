@@ -14,6 +14,8 @@ python.exe -m pip install -r requirements-dev.txt
 
 Open `workspace.code-workspace` in [VS Code](https://code.visualstudio.com/)
 
+Run `tox --recreate` if you modify `requirements*.txt`.
+
 ## Unit testing
 
 Run `tox` in the root diretory.

@@ -4,3 +4,4 @@ isort
 mypy
 tox
 flake8
+coverage
