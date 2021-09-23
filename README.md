@@ -13,3 +13,7 @@ python.exe -m pip install -r requirements-dev.txt
 ```
 
 Open `workspace.code-workspace` in [VS Code](https://code.visualstudio.com/)
+
+## Unit testing
+
+Run `tox` in the root diretory.
