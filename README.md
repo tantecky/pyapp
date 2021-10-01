@@ -4,20 +4,27 @@ An example app in Python. It is using several tools for formatting/linting (`iso
 
 ## How to prepare dev environment on Windows
 
-Install Python 3.8+ from [Anaconda](https://www.anaconda.com/products/individual), or download it [directly](https://www.python.org/ftp/python/3.8.10/python-3.8.10-amd64.exe).
+- Install [Python 3.8+](https://www.python.org/ftp/python/3.8.10/python-3.8) (e.g. to: `C:/Python38`). Do NOT use `python.exe` from [Anaconda](https://www.anaconda.com/products/individual).
 
-```bat
-python.exe -m venv venv
-call venv/Scripts/activate.bat
+- Clone this repo (`git clone https://github.com/tantecky/pyapp.git`).
+
+- Run PowerShell commands in the repo directory:
+
+```powershell
+C:/Python38/python.exe -m venv venv
+venv/Scripts/Activate.ps1
 python.exe -m pip install --upgrade pip
 python.exe -m pip install -r requirements.txt
 python.exe -m pip install -r requirements-dev.txt
 ```
 
-Open `workspace.code-workspace` in [VS Code](https://code.visualstudio.com/)
+- Open `workspace.code-workspace` in [VS Code](https://code.visualstudio.com/).
 
-Run `tox --recreate` if you modify `requirements*.txt`.
+- If you modify `requirements.txt` or `requirements-dev.txt` run:
+  - `python.exe -m pip install -r requirements.txt`
+  - `python.exe -m pip install -r requirements-dev.txt`
+  - `tox --recreate`
 
 ## Unit testing
 
-Run `tox` in the root directory.
+- Run `tox` in the repo directory.
