@@ -25,6 +25,6 @@ python.exe -m pip install -e .[dev]
   - `python.exe -m pip install -e .[dev]`
   - `tox --recreate`
 
-## Unit testing
+### Unit testing
 
 - Run `tox` in the repo directory.
