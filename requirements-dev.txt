@@ -1,8 +1,0 @@
-pytest
-pytest-html
-black
-isort
-mypy
-tox
-flake8
-coverage

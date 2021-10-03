@@ -14,15 +14,15 @@ An example app in Python. It is using several tools for formatting/linting (`iso
 C:/Python38/python.exe -m venv venv
 venv/Scripts/Activate.ps1
 python.exe -m pip install --upgrade pip
-python.exe -m pip install -r requirements.txt
-python.exe -m pip install -r requirements-dev.txt
+python.exe setup.py develop
+python.exe -m pip install -e .[dev]
 ```
 
 - Open `workspace.code-workspace` in [VS Code](https://code.visualstudio.com/).
 
-- If you modify `requirements.txt` or `requirements-dev.txt` run:
-  - `python.exe -m pip install -r requirements.txt`
-  - `python.exe -m pip install -r requirements-dev.txt`
+- If you add a new dependecy run:
+  - `python.exe setup.py develop`
+  - `python.exe -m pip install -e .[dev]`
   - `tox --recreate`
 
 ## Unit testing
