@@ -1,6 +1,6 @@
 # pyapp ![tests](https://github.com/tantecky/pyapp/actions/workflows/tests.yml/badge.svg)
 
-An example app in Python. It is using several tools for formatting/linting (`isort`, `black`, `flake8`, `mypy`). Unit testing is done through `pytest` with `coverage`. For CI [GitHub Actions](https://docs.github.com/en/actions) is employed.
+An example GUI app in Python. It is using several tools for formatting/linting (`isort`, `black`, `flake8`, `mypy`). Unit testing is done through `pytest` with `coverage`. For CI [GitHub Actions](https://docs.github.com/en/actions) is employed.
 
 ## How to prepare dev environment on Windows
 
@@ -29,3 +29,7 @@ python.exe -m pip install -e .[dev]
 ### Unit testing
 
 - Run `tox` in the repo directory.
+
+## Usage
+
+- Run `pyapp` to start the program.

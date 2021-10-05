@@ -34,7 +34,7 @@ setup(
     python_requires=">=3.8",
     entry_points={
         "gui_scripts": [
-            "pyapp=pyapp.cli:run",
+            "pyapp=pyapp.gui:show",
         ]
     },
 )
