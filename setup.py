@@ -33,7 +33,7 @@ setup(
     packages=find_packages(exclude=["tests"]),
     python_requires=">=3.8",
     entry_points={
-        "console_scripts": [
+        "gui_scripts": [
             "pyapp=pyapp.cli:run",
         ]
     },
