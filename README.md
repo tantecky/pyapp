@@ -14,6 +14,7 @@ An example app in Python. It is using several tools for formatting/linting (`iso
 C:/Python38/python.exe -m venv venv
 venv/Scripts/Activate.ps1
 python.exe -m pip install --upgrade pip
+python.exe -m pip install pyside6
 python.exe setup.py develop
 python.exe -m pip install -e .[dev]
 ```

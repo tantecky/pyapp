@@ -1,11 +1,12 @@
 from setuptools import setup, find_packages
+from pyapp import __version__
 
 with open("README.md", "r") as f:
     long_description = f.read()
 
 setup(
     name="pyapp",
-    version="0.0.1",
+    version=__version__,
     author="tantecky",
     author_email="tantecky@seznam.cz",
     description="An example app in Python.",
@@ -13,7 +14,10 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/tantecky/pyapp",
     license="MIT",
-    install_requires=["numpy"],
+    install_requires=[
+        "numpy",
+        "PySide6",
+    ],
     extras_require={
         "dev": [
             "pytest",

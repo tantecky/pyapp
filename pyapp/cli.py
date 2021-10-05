@@ -1,2 +1,4 @@
 def run():
-    print("Hello world!")
+    from pyapp.gui import show
+
+    show()
