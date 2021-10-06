@@ -33,3 +33,8 @@ python.exe -m pip install -e .[dev]
 ## Usage
 
 - Run `pyapp` to start the program.
+
+## Screenshots
+<img align="left" width="357" src="screenshots/1.png"/>
+
+
