@@ -1,4 +1,4 @@
-from PySide6.QtWidgets import QApplication  # type: ignore
+from PySide6.QtWidgets import QApplication
 
 from pyapp.gui.windows import MainWindow
 

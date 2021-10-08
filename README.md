@@ -4,37 +4,31 @@ An example GUI app in Python. It is using several tools for formatting/linting (
 
 ## How to prepare dev environment on Windows
 
-- Install [Python 3.8+](https://www.python.org/ftp/python/3.8.10/python-3.8) (e.g. to: `C:/Python38`). Do NOT use `python.exe` from [Anaconda](https://www.anaconda.com/products/individual).
+- Install [Python 3.8+](https://www.python.org/ftp/python/3.8.10/python-3.8.10-amd64.exe) (e.g. to: `C:/Python38`). Do NOT use `python.exe` from [Anaconda](https://www.anaconda.com/products/individual).
 
-- Clone this repo (`git clone https://github.com/tantecky/pyapp.git`).
-
-- Run PowerShell commands in the repo directory:
+- Create virtualenv in the repo directory:
 
 ```powershell
 C:/Python38/python.exe -m venv venv
-venv/Scripts/Activate.ps1
-python.exe -m pip install --upgrade pip
-python.exe -m pip install pyside6
-python.exe setup.py develop
-python.exe -m pip install -e .[dev]
 ```
+
+- Run `run_install.bat`
 
 - Open `workspace.code-workspace` in [VS Code](https://code.visualstudio.com/).
 
+- Run `run_dev.bat` to start the program in console for easier debugging. You can press ENTER for re-run.
+
 - If you add a new dependecy run:
-  - `python.exe setup.py develop`
-  - `python.exe -m pip install -e .[dev]`
-  - `tox --recreate`
+  - `run_tox_recreate.bat`
 
-### Unit testing
+### Unit testing/linting
 
-- Run `tox` in the repo directory.
+- Run `run_tox.bat` You can press ENTER for re-run.
 
 ## Usage
 
-- Run `pyapp` to start the program.
+- Run `pyapp.exe` to start the program without console window
 
 ## Screenshots
+
 <img align="left" width="357" src="screenshots/1.png"/>
-
-

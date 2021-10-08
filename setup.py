@@ -22,6 +22,8 @@ setup(
         "dev": [
             "pytest",
             "pytest-html",
+            "autopep8",
+            "autoflake",
             "black",
             "isort",
             "mypy",
